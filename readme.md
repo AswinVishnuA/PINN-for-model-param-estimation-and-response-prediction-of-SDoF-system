@@ -21,8 +21,8 @@
 <br></br>
 <p>
 
-        Physics-informed neural networks are gaining widespread attention among the scientific and engineering community. The basic concept, especially with physics-informed neural networks, is to use physics laws in the form of differential equations to train neural networks. This differs significantly from utilising neural networks as surrogate models trained with data acquired at a 26 combination of input and output values. Thus Physics-informed neural networks can be used to solve the forward problem (estimation of response) and the inverse problem (model parameter identification).
- </p>
+            Physics-informed neural networks are gaining widespread attention among the scientific and engineering community. The basic concept, especially with physics-informed neural networks, is to use physics laws in the form of differential equations to train neural networks. This differs significantly from utilising neural networks as surrogate models trained with data acquired at a 26 combination of input and output values. Thus Physics-informed neural networks can be used to solve the forward problem (estimation of response) and the inverse problem (model parameter identification).
+</p>
 <br>
 <center><img src="images\Overview.jpg"></center>
 <br></br>
@@ -30,9 +30,10 @@
 
 <center><h2>Seismic excitation of SDOF linear system</h2></center>
 <br></br>
+<p>
 
         In this study, the motion of a linear SDOF is considered. The equation of motion of the single degree of freedom system, shown below for the support acceleration defined by ÿg can be written as: Mÿ + Cẏ +Ky = -Mÿg ,or alternatively, ÿ= M-1 (- Mÿg- Cẏ - Ky) (1) The study assumes that while the masses and spring coefficients are known, the damping coefficient is unknown. Initially, the available data, which contains the ground acceleration as input data and corresponding displacement response as output data will be given to the physics-informed neural network. The neural network is modeled in such a way that the damping coefficient is the learning parameter. Later during training, the value of this damping coefficient gets updated. Once the coefficient is estimated, the equations of motion can be used to predict the mass displacements given any input conditions. This can be useful for the design of vibration control strategies.The whole process is illustrated in Fig below.
-
+</p>
 <center><img src="images\Sesls.jpg"></center>
 
 
